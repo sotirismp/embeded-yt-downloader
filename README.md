@@ -20,8 +20,8 @@ To get started with the Embedded YouTube to MP3 Downloader, follow these steps:
 
 1. **Clone the repository:**
     ```bash
-    git clone https://github.com/yourusername/embedded-youtube-to-mp3-downloader.git
-    cd embedded-youtube-to-mp3-downloader
+    git clone [https://github.com/yourusername/embedded-youtube-to-mp3-downloader.git](https://github.com/sotirismp/embeded-yt-downloader.git)
+    cd embeded-yt-downloader
     ```
 
 2. **Install dependencies:**
@@ -34,12 +34,9 @@ To get started with the Embedded YouTube to MP3 Downloader, follow these steps:
     npm start
     ```
 
-4. **Install [Scripty - JavaScript Injector](https://chromewebstore.google.com/detail/scripty-javascript-inject/milkbiaeapddfnpenedfgbfdacpbcbam) in your browser**
+4. **Install [Scripty - JavaScript Injector](https://chromewebstore.google.com/detail/scripty-javascript-inject/milkbiaeapddfnpenedfgbfdacpbcbam) extension in your browser**
 5. **Create new script with the following options and code:**
- **Name:** Youtube
- **Run script if:** URL - Contains - following input: youtube.com
- **Trigger:** Automatically - On Page load
- **Script:**
+![alt text](https://i.imgur.com/dv1uJV6.png)
     ```
     (async () => {
   	    while(true){
