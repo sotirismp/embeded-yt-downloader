@@ -20,7 +20,7 @@ To get started with the Embedded YouTube to MP3 Downloader, follow these steps:
 
 1. **Clone the repository:**
     ```bash
-    git clone [https://github.com/yourusername/embedded-youtube-to-mp3-downloader.git](https://github.com/sotirismp/embeded-yt-downloader.git)
+    git clone https://github.com/sotirismp/embeded-yt-downloader.git
     cd embeded-yt-downloader
     ```
 
