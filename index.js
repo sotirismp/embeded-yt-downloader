@@ -1,6 +1,6 @@
 var express = require("express");
 var app = express();
-var ytdl = require("ytdl-core");
+var ytdl = require("@distube/ytdl-core");
 var sanitize = require("sanitize-filename");
 const PORT = 9996;
 
@@ -12,7 +12,9 @@ app.get("/ytdl/:id", async function (req, res) {
     const filename = sanitize(info.videoDetails.title).replace(/\r?\n|\r/g, "");
     res.setHeader(
       "Content-disposition",
-      `attachment; filename="${encodeURIComponent(filename)}.mp3"; filename*=UTF-8''${encodeURIComponent(filename)}.mp3`
+      `attachment; filename="${encodeURIComponent(
+        filename
+      )}.mp3"; filename*=UTF-8''${encodeURIComponent(filename)}.mp3`
     );
     video.pipe(res);
   } catch (error) {
